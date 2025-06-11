@@ -1,0 +1,75 @@
+{
+  "version": 4,
+  "terraform_version": "1.11.4",
+  "serial": 181,
+  "lineage": "842e5877-d579-69eb-7f1c-21d4514110a6",
+  "outputs": {
+    "backend_public_ip": {
+      "value": "13.71.31.48",
+      "type": "string"
+    },
+    "frontend_public_ip": {
+      "value": "13.71.22.18",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "module": "module.frontend_subnet",
+      "mode": "managed",
+      "type": "azurerm_subnet",
+      "name": "subnet",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address_prefixes": [
+              "10.0.1.0/24"
+            ],
+            "default_outbound_access_enabled": true,
+            "delegation": [],
+            "id": "/subscriptions/f5fde029-2c19-48dd-adbc-953ef3965338/resourceGroups/bhava_automation/providers/Microsoft.Network/virtualNetworks/vnet-todoapp/subnets/frontend-subnet",
+            "name": "frontend-subnet",
+            "private_endpoint_network_policies": "Disabled",
+            "private_link_service_network_policies_enabled": true,
+            "resource_group_name": "bhava_automation",
+            "service_endpoint_policy_ids": null,
+            "service_endpoints": null,
+            "timeouts": null,
+            "virtual_network_name": "vnet-todoapp"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "module.resource_group.azurerm_resource_group.biscuit_rg",
+            "module.virtual_network.azurerm_virtual_network.virtual_network"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.resource_group",
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "biscuit_rg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/f5fde029-2c19-48dd-adbc-953ef3965338/resourceGroups/bhava_automation",
+            "location": "centralindia",
+            "managed_by": "",
+            "name": "bhava_automation",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

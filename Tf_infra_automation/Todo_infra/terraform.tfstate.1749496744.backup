@@ -1,0 +1,32 @@
+{
+  "version": 4,
+  "terraform_version": "1.11.4",
+  "serial": 93,
+  "lineage": "842e5877-d579-69eb-7f1c-21d4514110a6",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.resource_group",
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "biscuit_rg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/f5fde029-2c19-48dd-adbc-953ef3965338/resourceGroups/bhava_automation",
+            "location": "eastus",
+            "managed_by": "",
+            "name": "bhava_automation",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
